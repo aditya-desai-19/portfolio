@@ -1,7 +1,7 @@
 import Image from "next/image"
 import profileImage from "../../../public/profile-image.jpg"
 
-export default function ProfileImage() {
+export default function ProfileDetails() {
   return (
     <div className="flex items-end gap-2">
       <Image src={profileImage} alt="profile-image" width={200} height={200} className="rounded-full"/>

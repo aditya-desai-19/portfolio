@@ -3,7 +3,7 @@
 import { Separator } from "@/components/ui/separator";
 import Navbar from "./navbar";
 import Profile from "./(profile)/profile";
-import ProfileDescription from "./(profile)/profile-description";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Separator className="my-4 h-0.5!"/>
       <Profile />
       <Separator className="my-4 h-0.5!"/>
-      <ProfileDescription />
+      <About />
       <Separator className="my-4 h-0.5!"/>
     </div>
   );

@@ -92,8 +92,8 @@
   --primary-foreground: hsl(0 0% 10%);
   --secondary: hsl(0 0% 70%);
   --secondary-foreground: hsl(0 0% 97%);
-  --muted: hsl(0 0% 60%);
-  --muted-foreground: oklch(0.708 0 0);
+  --muted: hsl(0 0% 70%);
+  --muted-foreground: hsl(0 0% 97%);
   --accent: hsl(0 0% 20%);
   --accent-foreground: hsl(0 0% 97%);
   --destructive: oklch(0.704 0.191 22.216);
