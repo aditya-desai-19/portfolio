@@ -7,7 +7,7 @@ export default function ProfileDetails() {
       <Image src={profileImage} alt="profile-image" width={200} height={200} className="rounded-full"/>
       <div className="flex flex-col gap-1">
         <h1 className="text-3xl font-medium">{"Aditya Desai"}</h1>
-        <p className="text-sm text-muted">{"FullStack Developer"}</p>
+        <p className="text-sm text-muted">{"Full Stack Developer"}</p>
       </div>
     </div>
   )
