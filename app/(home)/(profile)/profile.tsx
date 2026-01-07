@@ -1,5 +1,5 @@
-import SocialButtonsBar from "./social-buttons-bar";
-import ProfileDetails from "./profile-details";
+import SocialButtonsBar from "./social-buttons-bar"
+import ProfileDetails from "./profile-details"
 
 export default function Profile() {
   return (
@@ -7,5 +7,5 @@ export default function Profile() {
       <ProfileDetails />
       <SocialButtonsBar />
     </section>
-  );
+  )
 }

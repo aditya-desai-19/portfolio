@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image"
 
 export enum JobType {
   FullTime = "Full Time",
@@ -6,9 +6,9 @@ export enum JobType {
 }
 
 export interface CompanyProps {
-  logo: StaticImageData;
-  name: string;
-  isActive: boolean;
-  duration: string;
-  jobType: JobType;
+  logo: StaticImageData
+  name: string
+  isActive: boolean
+  duration: string
+  jobType: JobType
 }

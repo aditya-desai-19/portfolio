@@ -1,9 +1,9 @@
 interface TextSegment {
-  text: string;
-  emphasis?: "bold";
+  text: string
+  emphasis?: "bold"
 }
 
-type BulletPoint = TextSegment[];
+type BulletPoint = TextSegment[]
 
 const bulletPoints: BulletPoint[] = [
   [
@@ -23,7 +23,7 @@ const bulletPoints: BulletPoint[] = [
     { text: "intuitive UI/UX ", emphasis: "bold" },
     { text: "and learning new technologies to solve real-world problems." },
   ],
-];
+]
 
 export default function About() {
   return (
@@ -33,7 +33,10 @@ export default function About() {
         {bulletPoints.map((bullet, i) => (
           <li key={i}>
             {bullet.map((item, j) => (
-              <span key={j} className={`text-muted ${item.emphasis === "bold" ? "font-semibold" : ""}`}>
+              <span
+                key={j}
+                className={`text-muted ${item.emphasis === "bold" ? "font-semibold" : ""}`}
+              >
                 {item.text}
               </span>
             ))}
@@ -41,5 +44,5 @@ export default function About() {
         ))}
       </ul>
     </section>
-  );
+  )
 }

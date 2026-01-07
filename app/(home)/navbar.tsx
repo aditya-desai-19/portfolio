@@ -1,22 +1,26 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import Link from "next/link";
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
+import { Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
+import Link from "next/link"
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  
+  const { theme, setTheme } = useTheme()
+
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+    setTheme(theme === "dark" ? "light" : "dark")
+  }
 
   return (
     <nav className="flex justify-end items-center gap-4 sticky top-0 z-10 bg-background p-2">
-      <Link href="#about" className="font-medium">About</Link>
-      <Link href="/projects" className="font-medium">Projects</Link>
+      <Link href="#about" className="font-medium">
+        About
+      </Link>
+      <Link href="/projects" className="font-medium">
+        Projects
+      </Link>
       <Separator
         orientation="vertical"
         className="
@@ -27,8 +31,12 @@ export default function Navbar() {
         "
       />
       <Button variant="outline" size="icon" onClick={toggleTheme}>
-        {theme === "dark" ? <Moon className="size-4"/> : <Sun className="size-4"/>}
+        {theme === "dark" ? (
+          <Moon className="size-4" />
+        ) : (
+          <Sun className="size-4" />
+        )}
       </Button>
     </nav>
-  );
+  )
 }

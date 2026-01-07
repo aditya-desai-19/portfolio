@@ -1,41 +1,41 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@/components/ui/tooltip"
 import {
   faGithub,
   faLinkedin,
   faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { ReactNode } from "react";
+} from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Link from "next/link"
+import { ReactNode } from "react"
 
 interface IconsProp {
-  icon: ReactNode;
-  link: string;
-  toolTipTitle: string;
+  icon: ReactNode
+  link: string
+  toolTipTitle: string
 }
 
 const icons: IconsProp[] = [
   {
-    icon: <FontAwesomeIcon icon={faGithub} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faGithub} size="lg" />,
     link: "https://github.com/aditya-desai-19",
     toolTipTitle: "Github",
   },
   {
-    icon: <FontAwesomeIcon icon={faLinkedin} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faLinkedin} size="lg" />,
     link: "https://www.linkedin.com/in/aditya-desai-192k/",
     toolTipTitle: "Linkedin",
   },
   {
-    icon: <FontAwesomeIcon icon={faXTwitter} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faXTwitter} size="lg" />,
     link: "https://x.com/desai__aditya",
     toolTipTitle: "Twitter",
   },
-];
+]
 
 export default function SocialButtonsBar() {
   return (
@@ -49,7 +49,9 @@ export default function SocialButtonsBar() {
               asChild
               className="rounded-full"
             >
-              <Link href={icon.link} target="_blank">{icon.icon}</Link>
+              <Link href={icon.link} target="_blank">
+                {icon.icon}
+              </Link>
             </Button>
           </TooltipTrigger>
           <TooltipContent>
@@ -58,5 +60,5 @@ export default function SocialButtonsBar() {
         </Tooltip>
       ))}
     </div>
-  );
+  )
 }

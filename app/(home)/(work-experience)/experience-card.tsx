@@ -1,16 +1,18 @@
 "use client"
 
-import { Card, CardHeader } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import ActiveIcon from "./active-icon";
-import Image from "next/image";
-import { CompanyProps } from "./types";
+import { Card, CardHeader } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import ActiveIcon from "./active-icon"
+import Image from "next/image"
+import { CompanyProps } from "./types"
 
 interface ExperienceCardProps {
-  experience: CompanyProps;
+  experience: CompanyProps
 }
 
-export default function ExperienceCard({ experience: exp }: ExperienceCardProps) {
+export default function ExperienceCard({
+  experience: exp,
+}: ExperienceCardProps) {
   return (
     <Card>
       <CardHeader>
@@ -40,5 +42,5 @@ export default function ExperienceCard({ experience: exp }: ExperienceCardProps)
         </div>
       </CardHeader>
     </Card>
-  );
+  )
 }
