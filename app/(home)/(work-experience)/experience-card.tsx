@@ -12,7 +12,7 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({ experience: exp }: ExperienceCardProps) {
   return (
-    <Card className="cursor-pointer">
+    <Card>
       <CardHeader>
         <div className="flex gap-2">
           <Image

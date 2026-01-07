@@ -27,7 +27,7 @@ const bulletPoints: BulletPoint[] = [
 
 export default function About() {
   return (
-    <div>
+    <section id="about" className="p-2">
       <h2 className="text-2xl font-semibold">{"About"}</h2>
       <ul className="my-2 list-disc pl-5 space-y-2">
         {bulletPoints.map((bullet, i) => (
@@ -40,6 +40,6 @@ export default function About() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

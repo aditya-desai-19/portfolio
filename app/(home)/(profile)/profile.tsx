@@ -3,9 +3,9 @@ import ProfileDetails from "./profile-details";
 
 export default function Profile() {
   return (
-    <div className="flex justify-between items-end">
+    <section className="flex justify-between items-end p-2">
       <ProfileDetails />
       <SocialButtonsBar />
-    </div>
+    </section>
   );
 }

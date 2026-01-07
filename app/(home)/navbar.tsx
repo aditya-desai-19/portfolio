@@ -14,8 +14,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex justify-end items-center gap-4">
-      <Link href="/about" className="font-medium">About</Link>
+    <nav className="flex justify-end items-center gap-4 sticky top-0 z-10 bg-background p-2">
+      <Link href="#about" className="font-medium">About</Link>
       <Link href="/projects" className="font-medium">Projects</Link>
       <Separator
         orientation="vertical"

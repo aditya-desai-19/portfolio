@@ -24,13 +24,13 @@ const experience: CompanyProps[] = [
 
 export default function WorkExperience() {
   return (
-    <div>
+    <section className="p-2">
       <h2 className="text-2xl font-semibold">{"Work Experience"}</h2>
       <div className="flex flex-col gap-2 my-4">
         {experience.map((exp) => (
           <ExperienceCard experience={exp} key={exp.name}/>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

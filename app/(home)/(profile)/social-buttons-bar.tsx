@@ -33,7 +33,7 @@ const icons: IconsProp[] = [
   {
     icon: <FontAwesomeIcon icon={faXTwitter} size="lg"/>,
     link: "https://x.com/desai__aditya",
-    toolTipTitle: "X(formerly Twitter)",
+    toolTipTitle: "Twitter",
   },
 ];
 
