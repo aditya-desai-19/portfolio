@@ -1,10 +1,15 @@
 "use client"
 
-import { Card, CardHeader } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import ActiveIcon from "./active-icon"
 import Image from "next/image"
 import { CompanyProps } from "./types"
+import {
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import CustomUl from "@/components/ui/custom-ul"
 
 interface ExperienceCardProps {
   experience: CompanyProps
@@ -14,8 +19,8 @@ export default function ExperienceCard({
   experience: exp,
 }: ExperienceCardProps) {
   return (
-    <Card>
-      <CardHeader>
+    <AccordionItem value={exp.name}>
+      <AccordionTrigger>
         <div className="flex gap-2">
           <Image
             src={exp.logo}
@@ -30,6 +35,7 @@ export default function ExperienceCard({
               <p className="text-lg font-medium">{exp.name}</p>
               {exp.isActive && <ActiveIcon />}
             </div>
+            <p className="text-muted">{exp.role}</p>
             <span className="text-muted text-sm flex items-center gap-1">
               <span>{exp.jobType}</span>
               <Separator
@@ -40,7 +46,12 @@ export default function ExperienceCard({
             </span>
           </div>
         </div>
-      </CardHeader>
-    </Card>
+      </AccordionTrigger>
+      <AccordionContent>
+        <div className="ml-8">
+          <CustomUl bulletPoints={exp.contributions} />
+        </div>
+      </AccordionContent>
+    </AccordionItem>
   )
 }

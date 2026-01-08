@@ -1,9 +1,4 @@
-interface TextSegment {
-  text: string
-  emphasis?: "bold"
-}
-
-type BulletPoint = TextSegment[]
+import CustomUl, { BulletPoint } from "@/components/ui/custom-ul"
 
 const bulletPoints: BulletPoint[] = [
   [
@@ -29,20 +24,7 @@ export default function About() {
   return (
     <section id="about" className="p-2">
       <h2 className="text-2xl font-semibold">{"About"}</h2>
-      <ul className="my-2 list-disc pl-5 space-y-2">
-        {bulletPoints.map((bullet, i) => (
-          <li key={i}>
-            {bullet.map((item, j) => (
-              <span
-                key={j}
-                className={`text-muted ${item.emphasis === "bold" ? "font-semibold" : ""}`}
-              >
-                {item.text}
-              </span>
-            ))}
-          </li>
-        ))}
-      </ul>
+      <CustomUl bulletPoints={bulletPoints} />
     </section>
   )
 }

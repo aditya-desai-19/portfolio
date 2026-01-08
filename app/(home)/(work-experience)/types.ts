@@ -1,3 +1,4 @@
+import { BulletPoint } from "@/components/ui/custom-ul"
 import { StaticImageData } from "next/image"
 
 export enum JobType {
@@ -11,4 +12,6 @@ export interface CompanyProps {
   isActive: boolean
   duration: string
   jobType: JobType
+  role: string
+  contributions: BulletPoint[]
 }
