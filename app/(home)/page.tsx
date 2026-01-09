@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import Profile from "./(profile)/profile"
 import About from "./about"
 import WorkExperience from "./(work-experience)/work-experience"
+import TechStack from "./tech-stack"
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <About />
       <Separator className="my-4 h-0.5!" />
       <WorkExperience />
+      <Separator className="my-4 h-0.5!" />
+      <TechStack />
       <Separator className="my-4 h-0.5!" />
     </div>
   )

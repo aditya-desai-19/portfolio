@@ -43,11 +43,6 @@ export const experience: CompanyProps[] = [
       ],
       [
         {
-          text: "Led frontend development of a React Native application, managing a team of three to deliver high-quality features and functionality.",
-        },
-      ],
-      [
-        {
           text: "Implemented a local database solution using WatermelonDB, enabling dynamic rendering with RxJS.",
         },
       ],
@@ -59,6 +54,64 @@ export const experience: CompanyProps[] = [
         { text: "and" },
         { text: "batch processing,", emphasis: "bold" },
         { text: "significantly improving local database storage efficiency. " },
+      ],
+      [
+        {
+          text: "Designed and developed the frontend application for a cancer patient using",
+        },
+        { text: "Next.js", emphasis: "bold" },
+        { text: "ensuring a user-friendly and accessible interface." },
+      ],
+      [
+        {
+          text: "Implemented",
+        },
+        { text: "responsive", emphasis: "bold" },
+        { text: "and" },
+        { text: "reusable", emphasis: "bold" },
+        { text: "components" },
+        { text: "in" },
+        { text: "React", emphasis: "bold" },
+        {
+          text: "project, such as ListView and dynamic forms, enhancing code modularity and maintainability.",
+        },
+      ],
+      [
+        {
+          text: "Integrated server-side components and developed server actions for efficient backend data fetching in",
+        },
+        { text: "Next.js", emphasis: "bold" },
+      ],
+      [
+        {
+          text: "Developed a snapshot feature for a surveillance project, enabling time-interval-based snapshots to summarize entire camera feeds, reducing client costs.",
+        },
+      ],
+      [
+        {
+          text: "Built an",
+        },
+        { text: "ETL service", emphasis: "bold" },
+        { text: "using" },
+        { text: "Azure Functions", emphasis: "bold" },
+        {
+          text: "to extract, transform, and load weather data every 24 hours, ensuring automated data processing.",
+        },
+      ],
+      [
+        {
+          text: "Designed and implemented the UI for the Beacons feature, enabling users to accurately determine their location inside a building.",
+        },
+      ],
+      [
+        {
+          text: "Developed interactive analytics graphs for diverse data sets, empowering the client to make data-driven decisions effectively.",
+        },
+      ],
+      [
+        {
+          text: "Created an open-source React boilerplate, streamlining the development process and enhancing project scalability.",
+        },
       ],
     ],
   },
