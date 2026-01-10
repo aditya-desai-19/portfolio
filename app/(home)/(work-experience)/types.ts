@@ -13,5 +13,7 @@ export interface CompanyProps {
   duration: string
   jobType: JobType
   role: string
+  location: string
+  workMode: string
   contributions: BulletPoint[]
 }

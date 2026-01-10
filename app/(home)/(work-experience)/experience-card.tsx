@@ -19,7 +19,7 @@ export default function ExperienceCard({
   experience: exp,
 }: ExperienceCardProps) {
   return (
-    <AccordionItem value={exp.name}>
+    <AccordionItem value={exp.name} className="border-b-2">
       <AccordionTrigger>
         <div className="flex gap-2">
           <Image
@@ -35,14 +35,19 @@ export default function ExperienceCard({
               <p className="text-lg font-medium">{exp.name}</p>
               {exp.isActive && <ActiveIcon />}
             </div>
-            <p className="text-muted">{exp.role}</p>
-            <span className="text-muted text-sm flex items-center gap-1">
+
+            <span className="text-muted">{exp.role}</span>
+
+            <span className="text-muted text-sm flex items-center gap-2">
               <span>{exp.jobType}</span>
-              <Separator
-                orientation="vertical"
-                className="h-4! w-0.5! bg-muted!"
-              />
+              <span>&middot;</span>
               <span>{exp.duration}</span>
+            </span>
+
+            <span className="text-muted text-sm flex items-center gap-2">
+              <span className="text-muted">{exp.location}</span>
+              <span>&middot;</span>
+              <span>{exp.workMode}</span>
             </span>
           </div>
         </div>

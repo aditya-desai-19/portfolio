@@ -10,6 +10,8 @@ export const experience: CompanyProps[] = [
     duration: "Oct 2025 - Present",
     jobType: JobType.FullTime,
     role: "Software Engineer",
+    location: "Bangalore, Karnataka, India",
+    workMode: "Hybrid",
     contributions: [
       [
         {
@@ -26,6 +28,8 @@ export const experience: CompanyProps[] = [
     duration: "April 2023 - Oct 2025",
     jobType: JobType.FullTime,
     role: "Junior Software Engineer",
+    location: "Bangalore, Karnataka, India",
+    workMode: "On-site",
     contributions: [
       [
         {

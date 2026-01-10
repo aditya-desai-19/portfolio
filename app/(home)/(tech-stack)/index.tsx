@@ -25,7 +25,7 @@ export default function TechStack() {
               height={16}
               width={16}
             />
-            {item.name}
+            <span className="text-sm font-semibold">{item.name}</span>
           </Badge>
         ))}
       </div>
