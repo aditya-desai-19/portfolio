@@ -40,8 +40,8 @@ export default function Navbar() {
           "bg-background/80 backdrop-blur",
           "transition-colors",
           isScrolled
-            ? "mt-4 rounded-full px-6 py-3 shadow-lg border-2"
-            : "px-6 py-3"
+            ? "rounded-full px-6 py-3 shadow-lg border-2"
+            : "px-6 py-1"
         )}
       >
 

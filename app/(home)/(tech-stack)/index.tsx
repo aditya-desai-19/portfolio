@@ -10,7 +10,7 @@ export default function TechStack() {
   const techStackData = getTechStackData(isDarkTheme)
 
   return (
-    <section>
+    <section className="p-2">
       <h2 className="text-2xl font-semibold">{"Tech Stack"}</h2>
       <div className="flex flex-wrap gap-2 my-2">
         {techStackData.map((item, i) => (
