@@ -2,10 +2,10 @@
 
 import { Separator } from "@/components/ui/separator"
 import Navbar from "./navbar"
-import Profile from "./(profile)/profile"
+import Profile from "./(profile)"
 import About from "./about"
-import WorkExperience from "./(work-experience)/work-experience"
-import TechStack from "./tech-stack"
+import WorkExperience from "./(work-experience)"
+import TechStack from "./(tech-stack)"
 
 export default function Home() {
   return (
