@@ -1,17 +1,18 @@
 "use client"
 
 import { Separator } from "@/components/ui/separator"
-import Navbar from "./navbar"
+import Header from "./header"
 import Profile from "./(profile)"
 import About from "./about"
 import WorkExperience from "./(work-experience)"
 import TechStack from "./(tech-stack)"
 import Projects from "./(projects)"
+import GetInTouch from "./get-in-touch"
 
 export default function Home() {
   return (
-    <div className="w-1/2  p-4">
-      <Navbar />
+    <div className="w-1/2  p-4 border-2">
+      <Header />
       <Separator className="my-4 h-0.5!" />
       <Profile />
       <Separator className="my-4 h-0.5!" />
@@ -22,6 +23,8 @@ export default function Home() {
       <TechStack />
       <Separator className="my-4 h-0.5!" />
       <Projects />
+      <Separator className="my-4 h-0.5!" />
+      <GetInTouch />
       <Separator className="my-4 h-0.5!" />
     </div>
   )

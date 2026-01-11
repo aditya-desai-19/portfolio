@@ -30,7 +30,7 @@ interface TechStackProps {
   name: string
 }
 
-export const getTechStackData = (isDarkTheme: boolean ): TechStackProps[] => [
+export const getTechStackData = (isDarkTheme: boolean): TechStackProps[] => [
   { logo: JavaScriptLogo, name: "JavaScript" },
   { logo: TypeScriptLogo, name: "TypeScript" },
   { logo: JavaLogo, name: "Java" },

@@ -16,13 +16,14 @@ export const projects: Project[] = [
     title: "Portfolio website",
     description: "My portfolio website",
     githubLink: "https://github.com/aditya-desai-19/portfolio",
-    technologies: ["Next.js", "TypeScript", "Shadcn UI"]
+    technologies: ["Next.js", "TypeScript", "Shadcn UI"],
   },
   {
     image: Pixiflow,
     title: "Pixiflow",
-    description: "An alternative to applications like Image Resizer, Reduce Images etc.",
+    description:
+      "An alternative to applications like Image Resizer, Reduce Images etc.",
     githubLink: "https://github.com/aditya-desai-19/Pixiflow",
-    technologies: ["Next.js", "Spring Boot", "Java"]
+    technologies: ["Next.js", "Spring Boot", "Java"],
   },
 ]

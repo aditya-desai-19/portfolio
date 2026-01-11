@@ -9,7 +9,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { motion } from "motion/react"
 
-export default function Navbar() {
+export default function Header() {
   const { theme, setTheme } = useTheme()
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -39,12 +39,9 @@ export default function Navbar() {
           "mx-auto flex items-center justify-end",
           "bg-background/80 backdrop-blur",
           "transition-colors",
-          isScrolled
-            ? "rounded-full px-6 py-3 shadow-lg border-2"
-            : "px-6 py-1"
+          isScrolled ? "rounded-full px-6 py-3 shadow-lg border-2" : "px-6 py-1"
         )}
       >
-
         <nav className="flex items-center gap-4 text-sm font-medium">
           <Link href="#about" className="hover:opacity-70">
             About

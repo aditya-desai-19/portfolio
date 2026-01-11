@@ -16,14 +16,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card>
       <CardHeader>
-        <div className="w-full aspect-video rounded-md overflow-hidden">
-          <Image
-            src={project.image}
-            alt="project-image"
-            className="h-full object-cover"
-            unoptimized
-          />
-        </div>
+        <Image
+          src={project.image}
+          alt="project-image"
+          className="w-full aspect-video rounded-md overflow-hidden object-cover"
+          unoptimized
+        />
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         <h3 className="text-lg font-semibold">{title}</h3>

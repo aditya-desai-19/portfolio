@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
-import { Inter, Roboto } from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import { cn } from "@/lib/utils"
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
           <main>
             <div className="flex justify-center">{children}</div>
           </main>
+          <Toaster position="bottom-center" />
         </ThemeProvider>
       </body>
     </html>
