@@ -1,7 +1,6 @@
 "use client"
 
 import { Separator } from "@/components/ui/separator"
-import Header from "./header"
 import Profile from "./(profile)"
 import About from "./about"
 import WorkExperience from "./(work-experience)"
@@ -11,8 +10,7 @@ import GetInTouch from "./get-in-touch"
 
 export default function Home() {
   return (
-    <div className="w-1/2  p-4 border-2">
-      <Header />
+    <div>
       <Separator className="my-4 h-0.5!" />
       <Profile />
       <Separator className="my-4 h-0.5!" />

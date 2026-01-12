@@ -19,8 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <Image
           src={project.image}
           alt="project-image"
-          className="w-full aspect-video rounded-md overflow-hidden object-cover"
-          unoptimized
+          className="w-full aspect-video rounded-md overflow-hidden object-fill"
         />
       </CardHeader>
       <CardContent className="flex flex-col gap-2">

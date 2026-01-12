@@ -4,6 +4,8 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/sonner"
+import Header from "./header"
+import Footer from "./footer"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,12 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={cn(inter.className, "antialiased")}>
+      <body
+        className={cn(inter.className, "antialiased", "flex justify-center")}
+      >
         <ThemeProvider attribute="class">
-          <main>
-            <div className="flex justify-center">{children}</div>
-          </main>
-          <Toaster position="bottom-center" />
+          <div className="w-1/2  p-4 border-2">
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <Toaster position="bottom-center" />
+          </div>
         </ThemeProvider>
       </body>
     </html>

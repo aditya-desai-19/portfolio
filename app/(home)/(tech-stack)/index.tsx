@@ -17,7 +17,7 @@ export default function TechStack() {
           <Badge
             variant={"outline"}
             key={item.name + i}
-            className="flex items-center gap-2 px-4 py-2 border-2 border-dashed border-foreground dark:bg-accent"
+            className="flex items-center gap-2 px-2 py-1 border-2 border-dotted border-accent-foreground dark:bg-accent"
           >
             <Image
               src={item.logo}
