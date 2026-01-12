@@ -27,7 +27,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-10 bg-background p-2">
+    <header className="sticky top-0 z-10 bg-transparent p-2">
       <motion.div
         layout
         transition={{
@@ -37,17 +37,20 @@ export default function Header() {
         }}
         className={clsx(
           "mx-auto flex items-center justify-end",
-          "bg-background/80 backdrop-blur",
+          "bg-transparent backdrop-blur",
           "transition-colors",
           isScrolled ? "rounded-full px-6 py-3 shadow-lg border-2" : "px-6 py-1"
         )}
       >
         <nav className="flex items-center gap-4 text-sm font-medium">
           <Link href="#about" className="hover:opacity-70">
-            About
+            {"About"}
           </Link>
-          <Link href="/projects" className="hover:opacity-70">
-            Projects
+          <Link href="#work" className="hover:opacity-70">
+            {"Work"}
+          </Link>
+          <Link href="#projects" className="hover:opacity-70">
+            {"Projects"}
           </Link>
           <Separator
             orientation="vertical"

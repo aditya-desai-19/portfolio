@@ -6,7 +6,7 @@ import { experience } from "./data"
 
 export default function WorkExperience() {
   return (
-    <section className="p-2">
+    <section id="work" className="scroll-mt-20 p-2">
       <h2 className="text-2xl font-semibold">{"Work Experience"}</h2>
       <div className="flex flex-col gap-2 my-2">
         <Accordion type="multiple">

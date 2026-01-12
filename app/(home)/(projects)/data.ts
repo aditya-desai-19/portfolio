@@ -12,13 +12,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    image: Portfolio,
-    title: "Portfolio website",
-    description: "My portfolio website",
-    githubLink: "https://github.com/aditya-desai-19/portfolio",
-    technologies: ["Next.js", "TypeScript", "Shadcn UI"],
-  },
-  {
     image: Pixiflow,
     title: "Pixiflow",
     description:

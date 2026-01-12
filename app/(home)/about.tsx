@@ -22,7 +22,7 @@ const bulletPoints: BulletPoint[] = [
 
 export default function About() {
   return (
-    <section id="about" className="p-2">
+    <section id="about" className="scroll-mt-20 p-2">
       <h2 className="text-2xl font-semibold">{"About"}</h2>
       <CustomUl bulletPoints={bulletPoints} />
     </section>
