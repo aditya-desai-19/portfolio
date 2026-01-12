@@ -28,7 +28,7 @@ export default function RootLayout({
         className={cn(inter.className, "antialiased", "flex justify-center")}
       >
         <ThemeProvider attribute="class">
-          <div className="w-1/2  p-4 border-2">
+          <div className="w-full p-4 border-2 lg:w-1/2">
             <Header />
             <main>{children}</main>
             <Footer />
