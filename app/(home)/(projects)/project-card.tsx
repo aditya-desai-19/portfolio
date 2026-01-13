@@ -14,12 +14,15 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   const { image, description, technologies, title, githubLink } = project
   return (
-    <Card>
-      <CardHeader>
+    <Card className="p-2">
+      <CardHeader className="relative h-52 rounded-md overflow-hidden bg-linear-to-r from-sky-500 to-indigo-500">
         <Image
-          src={project.image}
+          src={image}
           alt="project-image"
-          className="w-full aspect-video rounded-md overflow-hidden object-fill"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          priority
         />
       </CardHeader>
       <CardContent className="flex flex-col gap-2">

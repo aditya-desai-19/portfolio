@@ -15,9 +15,13 @@ export const experience: CompanyProps[] = [
     contributions: [
       [
         {
-          text: "Fixed data inconsistency issue between microservice and main backend by implementing a",
+          text: "Resolved issues related to MUI version 6 upgrade.",
         },
-        { text: "Message Queue.", emphasis: "bold" },
+      ],
+      [
+        {
+          text: "Fixed data inconsistency issue between microservice and main backend.",
+        },
       ],
     ],
   },

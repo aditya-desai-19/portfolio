@@ -11,7 +11,9 @@ export default function ProfileDetails() {
       />
       <div className="flex flex-col gap-1">
         <h1 className="text-3xl font-medium">{"Aditya Desai"}</h1>
-        <p className="text-sm text-muted text-center md:text-left">{"Full Stack Developer"}</p>
+        <p className="text-sm text-muted text-center md:text-left">
+          {"Full Stack Developer"}
+        </p>
       </div>
     </div>
   )

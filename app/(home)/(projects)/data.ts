@@ -1,6 +1,5 @@
 import { StaticImageData } from "next/image"
 import Pixiflow from "../../../public/pixiflow.png"
-import Portfolio from "../../../public/portfolio.png"
 
 export interface Project {
   image: StaticImageData
