@@ -10,6 +10,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link as LinkIcon } from "lucide-react"
 import Link from "next/link"
 import { ReactNode } from "react"
 
@@ -33,7 +34,12 @@ const icons: IconsProp[] = [
   {
     icon: <FontAwesomeIcon icon={faXTwitter} size="lg" />,
     link: "https://x.com/desai__aditya",
-    toolTipTitle: "Twitter",
+    toolTipTitle: "X(Formerly Twitter)",
+  },
+  {
+    icon: <LinkIcon size={"24"} />,
+    link: "https://drive.google.com/file/d/17ZUcH4MnNTUNk6GSg5wNJgr_9LEpJl3y/view?usp=drive_link",
+    toolTipTitle: "Resume",
   },
 ]
 
