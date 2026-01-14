@@ -13,8 +13,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Aditya Desai",
-  description: "Aditya Desai's Personal Portfolio",
+  title: "Aditya Desai - Full Stack Developer",
+  description: "My portfolio website",
 }
 
 export default function RootLayout({
@@ -24,11 +24,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body
         className={cn(inter.className, "antialiased", "flex justify-center")}
       >
         <ThemeProvider attribute="class">
-          <div className="w-full p-4 border-2 lg:w-1/2">
+          <div className="w-full p-4 lg:w-1/2">
             <Header />
             <main>{children}</main>
             <Footer />
