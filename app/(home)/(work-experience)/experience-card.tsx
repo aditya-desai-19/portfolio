@@ -20,7 +20,7 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <AccordionItem value={exp.name} className="border-b-2">
-      <AccordionTrigger>
+      <AccordionTrigger className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:transition-transform [&[data-state=open]>svg]:rotate-180">
         <div className="flex gap-2">
           <Image
             src={exp.logo}
