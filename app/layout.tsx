@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/sonner"
 import Header from "./header"
 import Footer from "./footer"
+import ScrollToTopBtn from "./scroll-to-top-btn"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
             <Footer />
             <Toaster position="bottom-center" />
           </div>
+          <ScrollToTopBtn />
         </ThemeProvider>
       </body>
     </html>

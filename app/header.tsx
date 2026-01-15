@@ -2,29 +2,20 @@
 
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import clsx from "clsx"
+import { cn } from "@/lib/utils"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
-import { useEffect, useState } from "react"
 import { motion } from "motion/react"
+import useScroll from "@/hooks/useScroll"
 
 export default function Header() {
   const { theme, setTheme } = useTheme()
-  const [isScrolled, setIsScrolled] = useState(false)
+  const { isScrolled } = useScroll()
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark")
   }
-
-  useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 80)
-    }
-
-    window.addEventListener("scroll", onScroll)
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
 
   return (
     <header className="sticky top-0 z-100 bg-transparent p-2">
@@ -35,7 +26,7 @@ export default function Header() {
           stiffness: 300,
           damping: 30,
         }}
-        className={clsx(
+        className={cn(
           "mx-auto flex items-center justify-end",
           "bg-background backdrop-blur",
           "transition-colors",
