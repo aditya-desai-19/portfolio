@@ -27,7 +27,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-10 bg-transparent p-2">
+    <header className="sticky top-0 z-100 bg-transparent p-2">
       <motion.div
         layout
         transition={{
@@ -37,7 +37,7 @@ export default function Header() {
         }}
         className={clsx(
           "mx-auto flex items-center justify-end",
-          "bg-transparent backdrop-blur",
+          "bg-background backdrop-blur",
           "transition-colors",
           isScrolled ? "rounded-full px-6 py-3 shadow-lg border-2" : "px-6 py-1"
         )}

@@ -7,6 +7,7 @@ export interface Project {
   description: string
   technologies: string[]
   githubLink: string
+  videoLink: string
 }
 
 export const projects: Project[] = [
@@ -17,5 +18,6 @@ export const projects: Project[] = [
       "An alternative to applications like Image Resizer, Reduce Images etc.",
     githubLink: "https://github.com/aditya-desai-19/Pixiflow",
     technologies: ["Next.js", "Spring Boot", "Java"],
+    videoLink: "https://www.youtube.com/embed/2nRGx9vD6kk",
   },
 ]

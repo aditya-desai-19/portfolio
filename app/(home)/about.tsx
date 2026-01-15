@@ -1,5 +1,7 @@
 import CustomUl, { BulletPoint } from "@/components/ui/custom-ul"
 
+const careerStartDate = new Date(2023, 3, 17)
+
 function getExactYearsDiff(dateFrom: Date, dateTo: Date): number {
   let yearDiff = dateTo.getFullYear() - dateFrom.getFullYear()
 
@@ -18,7 +20,7 @@ const bulletPoints: BulletPoint[] = [
   [
     { text: "Software Engineer with " },
     {
-      text: `${getExactYearsDiff(new Date(2023, 3, 17), new Date())}+ years`,
+      text: `${getExactYearsDiff(careerStartDate, new Date())}+ years`,
       emphasis: "bold",
     },
     {
