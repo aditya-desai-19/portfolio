@@ -11,7 +11,6 @@ import GetInTouch from "./get-in-touch"
 export default function Home() {
   return (
     <div>
-      <Separator className="my-4 h-0.5!" />
       <Profile />
       <Separator className="my-4 h-0.5!" />
       <About />
@@ -23,7 +22,6 @@ export default function Home() {
       <Projects />
       <Separator className="my-4 h-0.5!" />
       <GetInTouch />
-      <Separator className="my-4 h-0.5!" />
     </div>
   )
 }

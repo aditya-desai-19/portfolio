@@ -37,7 +37,14 @@ export const experience: CompanyProps[] = [
     contributions: [
       [
         {
-          text: "Developed a dynamic dashboard for doctors and researchers to create and manage various clinical trial tasks (e.g., surveys, appointments), featuring drag-and-drop task sequencing, client-side validation, and infinite scrolling for efficient task rendering.",
+          text: "Developed a",
+        },
+        {
+          text: "dynamic dashboard",
+          emphasis: "bold",
+        },
+        {
+          text: "for doctors and researchers to create and manage various clinical trial tasks (e.g., surveys, appointments), featuring drag-and-drop task sequencing, client-side validation, and infinite scrolling for efficient task rendering.",
         },
       ],
       [
@@ -50,11 +57,6 @@ export const experience: CompanyProps[] = [
         },
       ],
       [
-        {
-          text: "Implemented a local database solution using WatermelonDB, enabling dynamic rendering with RxJS.",
-        },
-      ],
-      [
         { text: "Optimized mobile app login time by" },
         { text: "90%", emphasis: "bold" },
         { text: "through" },
@@ -62,33 +64,6 @@ export const experience: CompanyProps[] = [
         { text: "and" },
         { text: "batch processing,", emphasis: "bold" },
         { text: "significantly improving local database storage efficiency. " },
-      ],
-      [
-        {
-          text: "Designed and developed the frontend application for a cancer patient using",
-        },
-        { text: "Next.js", emphasis: "bold" },
-        { text: "ensuring a user-friendly and accessible interface." },
-      ],
-      [
-        {
-          text: "Implemented",
-        },
-        { text: "responsive", emphasis: "bold" },
-        { text: "and" },
-        { text: "reusable", emphasis: "bold" },
-        { text: "components" },
-        { text: "in" },
-        { text: "React", emphasis: "bold" },
-        {
-          text: "project, such as ListView and dynamic forms, enhancing code modularity and maintainability.",
-        },
-      ],
-      [
-        {
-          text: "Integrated server-side components and developed server actions for efficient backend data fetching in",
-        },
-        { text: "Next.js", emphasis: "bold" },
       ],
       [
         {
@@ -108,17 +83,14 @@ export const experience: CompanyProps[] = [
       ],
       [
         {
-          text: "Designed and implemented the UI for the Beacons feature, enabling users to accurately determine their location inside a building.",
+          text: "Created an",
         },
-      ],
-      [
         {
-          text: "Developed interactive analytics graphs for diverse data sets, empowering the client to make data-driven decisions effectively.",
+          text: "open-source React boilerplate",
+          emphasis: "bold",
         },
-      ],
-      [
         {
-          text: "Created an open-source React boilerplate, streamlining the development process and enhancing project scalability.",
+          text: ", streamlining the development process and enhancing project scalability.",
         },
       ],
     ],

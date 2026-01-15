@@ -45,7 +45,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <div className="w-full p-4 lg:w-1/2">
             <Header />
-            <main>{children}</main>
+            <main className="border-t-2 border-b-2 my-2">{children}</main>
             <Footer />
             <Toaster position="bottom-center" />
           </div>

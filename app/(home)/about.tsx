@@ -1,9 +1,26 @@
 import CustomUl, { BulletPoint } from "@/components/ui/custom-ul"
 
+function getExactYearsDiff(dateFrom: Date, dateTo: Date): number {
+  let yearDiff = dateTo.getFullYear() - dateFrom.getFullYear()
+
+  if (
+    dateTo.getMonth() < dateFrom.getMonth() ||
+    (dateTo.getMonth() === dateFrom.getMonth() &&
+      dateTo.getDate() < dateFrom.getDate())
+  ) {
+    yearDiff--
+  }
+
+  return yearDiff
+}
+
 const bulletPoints: BulletPoint[] = [
   [
     { text: "Software Engineer with " },
-    { text: "2+ years ", emphasis: "bold" },
+    {
+      text: `${getExactYearsDiff(new Date(2023, 3, 17), new Date())}+ years`,
+      emphasis: "bold",
+    },
     {
       text: "of experience building scalable, user-centric web and mobile applications.",
     },
