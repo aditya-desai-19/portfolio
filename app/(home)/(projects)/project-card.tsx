@@ -32,6 +32,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           sizes="(max-width: 768px) 100vw, 50vw"
           priority
         />
+        <div className="absolute inset-0 z-10 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
         <div
           className="absolute opacity-0 scale-95 z-20  h-full w-full flex justify-center items-center group-hover:opacity-100 group-hover:scale-100
               transition-all duration-200"
