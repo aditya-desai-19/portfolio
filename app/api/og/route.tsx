@@ -22,7 +22,7 @@ type ChipProps = {
 }
 
 const Chip = ({ children }: ChipProps) => (
-  <div style={{ display: "flex", gap: 4, alignItems: "center", padding: 8, borderRadius: 8, backgroundColor: "hsl(0 0% 20%)", }}>
+  <div style={{ display: "flex", gap: 8, alignItems: "center", padding: 8, borderRadius: 8, backgroundColor: "hsl(0 0% 20%)", }}>
     {children}
   </div>
 )
@@ -107,21 +107,21 @@ export async function GET() {
           <div style={{ display: "flex", gap: 16 }}>
             <Chip>
               <WebIcon />
-              <span>{"/"}adityadesai.co.in</span>
+              <span style={{fontSize: 24}}>{"/"}adityadesai.co.in</span>
             </Chip>
             <Chip>
               <GithubIcon />
-              <span>{"/"}aditya-desai-19</span>
+              <span style={{fontSize: 24}}>{"/"}aditya-desai-19</span>
             </Chip>
           </div>
           <div style={{ display: "flex", gap: 16 }}>
             <Chip>
               <LinkedInIcon />
-              <span>{"/"}aditya-desai-192k</span>
+              <span style={{fontSize: 24}}>{"/"}aditya-desai-192k</span>
             </Chip>
             <Chip>
               <TwitterIcon />
-              <span>{"/"}desai__aditya</span>
+              <span style={{fontSize: 24}}>{"/"}desai__aditya</span>
             </Chip>
           </div>
         </div>
