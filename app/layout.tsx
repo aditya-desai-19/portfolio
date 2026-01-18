@@ -16,6 +16,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Aditya Desai - Full Stack Developer",
   description: "My portfolio website",
+  openGraph: {
+    title: 'Aditya Desai',
+    description: 'Full Stack Developer',
+    images: ['/api/og'],
+    url: 'https://adityadesai.co.in',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/api/og'],
+  },
 }
 
 export default function RootLayout({
