@@ -38,7 +38,7 @@ const icons: IconsProp[] = [
   },
   {
     icon: <LinkIcon size={"24"} />,
-    link: "https://drive.google.com/file/d/17ZUcH4MnNTUNk6GSg5wNJgr_9LEpJl3y/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1UNROAbPz0pk--VOI75soaJYKvnSckyUp/view?usp=sharing",
     toolTipTitle: "Resume",
   },
 ]
