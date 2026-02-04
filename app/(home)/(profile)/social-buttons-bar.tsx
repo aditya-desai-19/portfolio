@@ -54,6 +54,7 @@ export default function SocialButtonsBar() {
               size="icon"
               asChild
               className="rounded-full"
+              aria-label={icon.toolTipTitle}
             >
               <Link href={icon.link} target="_blank">
                 {icon.icon}

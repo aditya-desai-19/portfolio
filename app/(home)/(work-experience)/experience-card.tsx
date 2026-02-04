@@ -1,6 +1,5 @@
 "use client"
 
-import { Separator } from "@/components/ui/separator"
 import ActiveIcon from "./active-icon"
 import Image from "next/image"
 import { CompanyProps } from "./types"
@@ -19,8 +18,8 @@ export default function ExperienceCard({
   experience: exp,
 }: ExperienceCardProps) {
   return (
-    <AccordionItem value={exp.name} className="border-b-2">
-      <AccordionTrigger className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:transition-transform [&[data-state=open]>svg]:rotate-180">
+    <AccordionItem value={exp.name} className="border-b-2" aria-label={`Experience at ${exp.name}`}>
+      <AccordionTrigger className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:transition-transform [&[data-state=open]>svg]:rotate-180 hover:no-underline cursor-pointer">
         <div className="flex gap-2">
           <Image
             src={exp.logo}

@@ -34,16 +34,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         />
         <div className="absolute inset-0 z-10 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
         <div
-          className="absolute opacity-0 scale-95 z-20  h-full w-full flex justify-center items-center group-hover:opacity-100 group-hover:scale-100
+          className="absolute opacity-0 scale-95 z-10  h-full w-full flex justify-center items-center group-hover:opacity-100 group-hover:scale-100
               transition-all duration-200"
         >
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="rounded-full h-16 w-16 text-foreground bg-background/90 hover:bg-background/80 cursor-pointer">
+              <Button className="rounded-full h-16 w-16 text-foreground bg-background/90 hover:bg-background/80 cursor-pointer" aria-label="Play Video">
                 <Play className="h-8! w-8!" />
               </Button>
             </DialogTrigger>
-            <DialogContent className="w-[90vw] lg:w-[70vw] sm:max-w-none p-0 overflow-hidden">
+            <DialogContent className="w-[90vw] lg:w-[70vw] sm:max-w-none p-0 overflow-hidden z-50">
               <DialogTitle className="hidden"></DialogTitle>
               <div className="relative w-full aspect-video flex justify-center items-center">
                 <iframe
@@ -72,7 +72,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </Badge>
           ))}
         </div>
-        <Button variant="outline" size="icon" asChild className="rounded-full">
+        <Button variant="outline" size="icon" asChild className="rounded-full" aria-label="GitHub Link">
           <Link href={githubLink} target="_blank">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </Link>

@@ -17,6 +17,7 @@ export default function ScrollToTopBtn() {
         isScrolled ? "opacity-100" : "opacity-0 pointer-events-none"
       )}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="Scroll to top"
     >
       <MoveUp />
     </Button>
