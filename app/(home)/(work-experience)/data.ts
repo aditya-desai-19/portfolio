@@ -5,9 +5,9 @@ import { CompanyProps, JobType } from "./types"
 export const experience: CompanyProps[] = [
   {
     logo: AnthologyLogo,
-    name: "Anthology",
-    isActive: true,
-    duration: "Oct 2025 - Present",
+    name: "Blackboard(Prev. Anthology)",
+    isActive: false,
+    duration: "Oct 2025 - June 2026",
     jobType: JobType.FullTime,
     role: "Software Engineer",
     location: "Bangalore, Karnataka, India",
@@ -15,14 +15,33 @@ export const experience: CompanyProps[] = [
     contributions: [
       [
         {
-          text: "Resolved issues related to MUI version 6 upgrade.",
+          text: "Led migration fixes for the MUI v6 upgrade across frontend applications, ensuring UI consistency and reducing production issues.",
         },
       ],
       [
         {
-          text: "Fixed data inconsistency issue between microservice and main backend.",
+          text: "Diagnosed and resolved data synchronization issues between",
         },
+        {
+          text: "Node.js microservice",
+          emphasis: "bold"
+        },
+        {
+          text: "and"
+        },
+        {
+          text: "Java Spring Boot backend",
+          emphasis: "bold"
+        },
+        {
+          text: ", improving system reliability and data consistency."
+        }
       ],
+      [
+        {
+          text: "Debugged and resolved a Null Pointer Exception affecting bookmark access in the Java Spring Boot backend for the course content page."
+        }
+      ]
     ],
   },
   {

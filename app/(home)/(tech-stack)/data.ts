@@ -1,11 +1,9 @@
 import { StaticImageData } from "next/image"
 import AwsLogo from "../../../public/aws.png"
-import CssLogo from "../../../public/css.png"
 import DockerLogo from "../../../public/docker.png"
 import ExpressLogo from "../../../public/express.png"
 import ExpressDarkBgLogo from "../../../public/express-dark-bg.png"
 import GitLogo from "../../../public/git.png"
-import HtmlLogo from "../../../public/html.png"
 import JavaLogo from "../../../public/java.png"
 import JavaScriptLogo from "../../../public/javascript-logo.png"
 import JestLogo from "../../../public/jest-logo.png"
@@ -34,8 +32,6 @@ export const getTechStackData = (isDarkTheme: boolean): TechStackProps[] => [
   { logo: JavaScriptLogo, name: "JavaScript" },
   { logo: TypeScriptLogo, name: "TypeScript" },
   { logo: JavaLogo, name: "Java" },
-  { logo: HtmlLogo, name: "Html" },
-  { logo: CssLogo, name: "Css" },
   { logo: TailwindCssLogo, name: "Tailwind Css" },
   { logo: ReactLogo, name: "React" },
   { logo: isDarkTheme ? NextJsDarkBgLogo : NextJsLogo, name: "Next.js" },

@@ -29,7 +29,7 @@ const bulletPoints: BulletPoint[] = [
   ],
   [
     { text: "Hands-on experience with " },
-    { text: "React, React Native, Next.js, and Node.js, ", emphasis: "bold" },
+    { text: "React, Java, Spring Boot, React Native, Next.js, and Node.js, ", emphasis: "bold" },
     { text: "with a strong focus on performance and maintainability." },
   ],
   [
